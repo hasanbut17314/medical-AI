@@ -97,10 +97,10 @@ export function TestimonialsSection() {
                         <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
                             <span className="text-[#2cbeff]">Patient Testimonials:</span>
                             <br />
-                            Hear from Those We've Cared For
+                            Hear from Those We&apos;ve Cared For
                         </h2>
                         <p className="mx-auto mb-12 max-w-3xl text-muted-foreground">
-                            Discover the difference we make through the voices of those we've served:
+                            Discover the difference we make through the voices of those we&apos;ve served:
                         </p>
                     </div>
 
@@ -119,7 +119,7 @@ export function TestimonialsSection() {
                                         className="rounded-lg object-cover"
                                     />
                                     <div>
-                                        <p className="text-gray-700">"{testimonial.quote}"</p>
+                                        <p className="text-gray-700">&quot;{testimonial.quote}&quot;</p>
                                         <p className="mt-2 font-medium text-gray-900">- {testimonial.name}</p>
                                     </div>
                                 </div>
@@ -152,7 +152,7 @@ export function TestimonialsSection() {
                                         className="rounded-lg object-cover"
                                     />
                                     <div>
-                                        <p className="text-gray-700">"{testimonial.quote}"</p>
+                                        <p className="text-gray-700">&quot;{testimonial.quote}&quot;</p>
                                         <p className="mt-2 font-medium text-gray-900">- {testimonial.name}</p>
                                     </div>
                                 </div>

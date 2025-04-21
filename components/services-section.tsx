@@ -40,7 +40,7 @@ export function ServicesSection() {
                         Top <span className="text-[#2cbeff]">services</span> we offer
                     </h2>
                     <p className="mb-12 text-muted-foreground">
-                        In today's fast-paced world, your health deserves the utmost attention and convenience. That's why HealNet
+                        In today&apos;s fast-paced world, your health deserves the utmost attention and convenience. That&apos;s why HealNet
                         offers a suite of integrated services designed to cater to your healthcare needs digitally:
                     </p>
                 </div>
