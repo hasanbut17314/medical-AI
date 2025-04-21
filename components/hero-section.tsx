@@ -59,7 +59,7 @@ export function HeroSection() {
 
                     {/* Right column - Image and stats */}
                     <div className="relative mt-8 flex justify-center lg:mt-0">
-                        <div className="relative h-[450px] w-[450px]">
+                        <div className="relative sm:h-[450px] sm:w-[450px]">
                             <div className="absolute inset-0 rounded-full bg-[#2cbeff]/20"></div>
                             <Image
                                 src="/doctor.png"

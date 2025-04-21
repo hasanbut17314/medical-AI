@@ -39,57 +39,57 @@ export function SpecialtiesSection() {
                     <div className="relative flex items-center justify-center">
                         <div className="relative w-full max-w-md">
                             {/* Outer circle */}
-                            <div className="absolute inset-0 rounded-full border border-[#03a9f4]/30"></div>
+                            <div className="absolute sm:inset-0 inset-10 rounded-full border border-[#03a9f4]/30"></div>
 
                             {/* Middle circle */}
-                            <div className="absolute inset-[60px] rounded-full border border-[#03a9f4]/30"></div>
+                            <div className="absolute sm:inset-[60px] inset-[120px] rounded-full border border-[#03a9f4]/30"></div>
 
                             {/* Center blue circle with text */}
-                            <div className="absolute inset-[120px] flex items-center justify-center rounded-full bg-[#03a9f4] text-white">
+                            <div className="absolute sm:inset-[120px] inset-[130px] flex items-center justify-center rounded-full bg-[#03a9f4] text-white">
                                 <div className="text-center">
-                                    <h3 className="text-2xl font-bold sm:text-3xl">Our</h3>
-                                    <h3 className="text-2xl font-bold sm:text-3xl">Speciality</h3>
+                                    <h3 className="text-lg font-bold sm:text-3xl">Our</h3>
+                                    <h3 className="text-lg font-bold sm:text-3xl">Speciality</h3>
                                 </div>
                             </div>
 
                             {/* Icons positioned around the circles */}
-                            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
+                            <div className="absolute sm:top-0 top-16 left-1/2 -translate-x-1/2 -translate-y-1/2 transform">
                                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#03a9f4]">
                                     <Briefcase className="h-8 w-8 text-white" />
                                 </div>
                             </div>
 
-                            <div className="absolute top-1/4 right-0 translate-x-1/2 transform">
+                            <div className="absolute top-1/4 right-0 sm:translate-x-1/2 -translate-x-20 transform">
                                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#03a9f4]">
                                     <Heart className="h-5 w-5 text-white" />
                                 </div>
                             </div>
 
-                            <div className="absolute top-1/2 right-0 translate-x-1/2 transform">
+                            <div className="absolute top-1/2 right-0 sm:translate-x-1/2 -translate-x-12 transform">
                                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#03a9f4]">
                                     <Gift className="h-8 w-8 text-white" />
                                 </div>
                             </div>
 
-                            <div className="absolute bottom-0 right-1/4 translate-y-1/2 transform">
+                            <div className="absolute bottom-0 right-1/4 sm:translate-y-1/2 -translate-y-16 transform">
                                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#03a9f4]">
                                     <Activity className="h-8 w-8 text-white" />
                                 </div>
                             </div>
 
-                            <div className="absolute bottom-0 left-1/4 translate-y-1/2 transform">
+                            <div className="absolute bottom-0 left-1/4 sm:translate-y-1/2 -translate-y-14 transform">
                                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#03a9f4]">
                                     <Radio className="h-8 w-8 text-white" />
                                 </div>
                             </div>
 
-                            <div className="absolute top-1/2 left-0 -translate-x-1/2 transform">
+                            <div className="absolute top-1/2 left-0 sm:-translate-x-1/2 translate-x-12 transform">
                                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#03a9f4]">
                                     <Flask className="h-8 w-8 text-white" />
                                 </div>
                             </div>
 
-                            <div className="absolute top-1/4 left-0 -translate-x-1/2 transform">
+                            <div className="absolute top-1/4 left-0 sm:-translate-x-1/2 translate-x-12 transform">
                                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#03a9f4]">
                                     <Users className="h-8 w-8 text-white" />
                                 </div>
