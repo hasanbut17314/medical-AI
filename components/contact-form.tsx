@@ -30,7 +30,7 @@ export function ContactForm() {
     }
 
     return (
-        <section className="w-full py-12 md:py-16">
+        <section className="w-full py-12 md:py-16" id="contact">
             <div className="container px-4 md:px-6">
                 <div className="mx-auto max-w-3xl text-center">
                     <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">

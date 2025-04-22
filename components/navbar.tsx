@@ -1,14 +1,13 @@
 "use client"
 
 import * as React from "react"
-import Link from "next/link"
 import Image from "next/image"
+import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import {
     NavigationMenu,
     NavigationMenuItem,
-    NavigationMenuLink,
     NavigationMenuList,
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
@@ -19,21 +18,46 @@ export function Navbar() {
     const [isOpen, setIsOpen] = React.useState(false)
 
     const navItems = [
-        { name: "Home", href: "/" },
-        { name: "Services", href: "/services" },
-        { name: "Find Doctors", href: "/doctors" },
-        { name: "About us", href: "/about" },
-        { name: "Blog", href: "/blog" },
-        { name: "Contact us", href: "/contact" },
+        { name: "Home", href: "#home" },
+        { name: "Services", href: "#services" },
+        { name: "Find Doctors", href: "#doctors" },
+        { name: "About us", href: "#about" },
+        { name: "Contact us", href: "#contact" },
     ]
 
+    // Function to handle smooth scrolling
+    const scrollToSection = (e: React.MouseEvent, href: string) => {
+        e.preventDefault()
+
+        // Handle case where user might be on a different page
+        if (window.location.pathname !== "/") {
+            window.location.href = `/${href}`
+            return
+        }
+
+        const element = document.querySelector(href)
+        if (element) {
+            // Smooth scroll to the element
+            element.scrollIntoView({ behavior: "smooth" })
+
+            // Close mobile menu if open
+            if (isOpen) {
+                setIsOpen(false)
+            }
+        }
+    }
+
     return (
-        <header className="relative top-0 z-50 w-full">
+        <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md">
             <div className="max-w-7xl mx-auto lg:px-4 px-3 flex h-16 items-center justify-between">
                 <div className="flex items-center">
-                    <Link href="/" className="flex items-center space-x-2">
+                    <a
+                        href="#home"
+                        className="flex items-center space-x-2"
+                        onClick={(e) => scrollToSection(e, "#home")}
+                    >
                         <Image src="/logo.png" alt="HealNet Logo" width={120} height={120} />
-                    </Link>
+                    </a>
                 </div>
 
                 {/* Desktop Navigation */}
@@ -41,15 +65,16 @@ export function Navbar() {
                     <NavigationMenuList>
                         {navItems.map((item) => (
                             <NavigationMenuItem key={item.name}>
-                                <NavigationMenuLink
+                                <a
                                     className={cn(
                                         navigationMenuTriggerStyle(),
-                                        "text-base font-medium text-gray-700 hover:text-blue-600",
+                                        "text-base font-medium text-gray-700 hover:text-blue-600 cursor-pointer",
                                     )}
                                     href={item.href}
+                                    onClick={(e) => scrollToSection(e, item.href)}
                                 >
                                     {item.name}
-                                </NavigationMenuLink>
+                                </a>
                             </NavigationMenuItem>
                         ))}
                     </NavigationMenuList>
@@ -66,14 +91,16 @@ export function Navbar() {
                     <SheetContent side="right">
                         <nav className="flex flex-col gap-4 mt-8 p-3">
                             {navItems.map((item) => (
-                                <Link
+                                <a
                                     key={item.name}
                                     href={item.href}
                                     className="text-lg font-medium text-gray-700 hover:text-blue-600"
-                                    onClick={() => setIsOpen(false)}
+                                    onClick={(e) => {
+                                        scrollToSection(e, item.href)
+                                    }}
                                 >
                                     {item.name}
-                                </Link>
+                                </a>
                             ))}
                             <Link href="/login" className="mt-4 w-full bg-gradient-to-r from-blue-400 to-blue-600 text-white px-6 py-1 text-lg font-semibold text-center rounded-md">Join us</Link>
                         </nav>

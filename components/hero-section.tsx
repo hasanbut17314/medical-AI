@@ -14,7 +14,7 @@ import c4 from '@/public/customer4.png'
 export function HeroSection() {
     const cArry = [c1, c2, c3, c4]
     return (
-        <section className="relative overflow-hidden bg-white py-12 md:py-16 lg:py-20">
+        <section className="relative overflow-hidden bg-white py-12 md:py-16 lg:py-20" id="home">
             <div className="max-w-7xl mx-auto px-4 md:px-6">
                 <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
                     {/* Left column - Text content */}

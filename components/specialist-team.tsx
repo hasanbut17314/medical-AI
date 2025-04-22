@@ -32,7 +32,7 @@ export function SpecialistsTeam() {
     ]
 
     return (
-        <section className="relative w-full overflow-hidden py-16">
+        <section className="relative w-full overflow-hidden py-16" id="doctors">
             {/* Decorative dots pattern left side */}
             <div className="absolute bottom-1/4 left-0 h-32 w-32 opacity-20">
                 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">

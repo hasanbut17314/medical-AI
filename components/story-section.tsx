@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 export function StorySection() {
     return (
-        <section className="w-full py-12 md:py-16">
+        <section className="w-full py-12 md:py-16" id="about">
             <div className="max-w-7xl mx-auto px-4 md:px-6">
                 <div className="mx-auto max-w-6xl rounded-3xl border border-[#e7f6ff] bg-white p-6 md:p-8 lg:p-12">
                     <h2 className="mb-8 text-center text-3xl font-bold tracking-tight md:text-4xl">

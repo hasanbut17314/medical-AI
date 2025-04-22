@@ -33,7 +33,7 @@ export function ServicesSection() {
     ]
 
     return (
-        <section className="relative w-full overflow-hidden py-16">
+        <section className="relative w-full overflow-hidden py-16" id="services">
             <div className="max-w-7xl mx-auto px-3 md:px-4">
                 <div className="mx-auto max-w-3xl text-center">
                     <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
