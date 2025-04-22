@@ -96,7 +96,7 @@ export function LoginForm() {
                 </div>
 
                 <div className="text-center text-sm">
-                    <span className="text-gray-700">Don't have an account? </span>
+                    <span className="text-gray-700">Don&apos;t have an account? </span>
                     <Link href="/signup" className="font-medium text-[#00a4f4] hover:underline">
                         Sign up now
                     </Link>
