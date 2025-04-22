@@ -75,15 +75,15 @@ export function Navbar() {
                                     {item.name}
                                 </Link>
                             ))}
-                            <Button className="mt-4 w-full bg-gradient-to-r from-blue-400 to-blue-600 text-white">Join us</Button>
+                            <Link href="/login" className="mt-4 w-full bg-gradient-to-r from-blue-400 to-blue-600 text-white px-6 py-1 text-lg font-semibold text-center rounded-md">Join us</Link>
                         </nav>
                     </SheetContent>
                 </Sheet>
 
                 {/* Join us button */}
-                <Button className="hidden md:inline-flex bg-gradient-to-r from-blue-400 to-blue-600 text-white rounded-md px-6 py-2 text-lg">
+                <Link href="/login" className="hidden md:inline-flex bg-gradient-to-r from-blue-400 to-blue-600 text-white rounded-md px-6 py-2 text-lg font-semibold">
                     Join us
-                </Button>
+                </Link>
             </div>
         </header>
     )
