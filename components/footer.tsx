@@ -5,7 +5,7 @@ import Image from "next/image"
 export function Footer() {
     return (
         <footer className="w-full bg-[#f2faff]">
-            <div className="container px-4 py-12 md:px-6 md:py-16">
+            <div className="container mx-auto px-4 py-12 md:px-6 md:py-16">
                 <div className="grid gap-8 md:grid-cols-4">
                     {/* Logo and tagline */}
                     <div className="flex flex-col">

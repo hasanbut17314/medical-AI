@@ -32,11 +32,11 @@ export function HeroSection() {
                             <p className="text-lg">
                                 <span className="font-medium text-[#00a4f4]">Empowering Your Health at Every Step.</span> Experience
                                 personalized medical care from the comfort of your home. Connect with{" "}
-                                <Link href="#" className="text-[#00a4f4] hover:underline">
+                                <span className="text-[#00a4f4]">
                                     certified doctors
-                                </Link>
+                                </span>
                                 , or manage prescriptions, and schedule appointments with ease. Ready to take control of your health?{" "}
-                                <Link href="#" className="text-[#00a4f4] hover:underline">
+                                <Link href="/booking" className="text-[#00a4f4] hover:underline">
                                     Get Started
                                 </Link>{" "}
                                 or Book an Appointment today.
@@ -47,7 +47,7 @@ export function HeroSection() {
                                     asChild
                                     className="rounded-full bg-[#2cbeff] px-8 py-6 text-lg font-medium text-white hover:bg-[#0069ab]"
                                 >
-                                    <Link href="#appointment">
+                                    <Link href="/booking">
                                         Book an appointment <span className="ml-2">→</span>
                                     </Link>
                                 </Button>
